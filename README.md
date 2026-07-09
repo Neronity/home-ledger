@@ -1,14 +1,14 @@
 # Home Ledger
 
-Household expense tracker for day-to-day home expenses.
+Home Ledger is a household budget and expense tracking application for recording day-to-day transactions, organizing spending by custom categories/subcategories, and eventually managing monthly budgets with carryover.
 
-The goal is to track monthly expenses, understand spending by category, and eventually manage monthly/category budgets.
+The project is currently in the planning/setup phase. The first goal is a small MVP that tracks expense transactions by month and category hierarchy.
 
 ## Current Status
 
 Planning/setup phase.
 
-Initial project plan: [`docs/initial-plan.md`](docs/initial-plan.md)
+Start with the documentation index: [`docs/README.md`](docs/README.md)
 
 ## Planned Stack
 
@@ -37,16 +37,16 @@ home-ledger/
 
 First useful version:
 
-- Add expenses manually.
-- Store amount, date, description, and category.
-- List expenses by month.
-- Show monthly totals.
-- Show spending by category.
+- Add expense transactions manually.
+- Store amount, date, description, and category/subcategory.
+- List expense transactions by month.
+- Show monthly expense totals.
+- Show spending grouped by category and subcategory.
 
 First vertical slice:
 
 ```text
-Create expense -> persist expense -> display expense list
+Create expense transaction -> persist transaction -> display monthly transaction list
 ```
 
 ## Local Development
@@ -63,15 +63,21 @@ Expected workflow:
 
 ## Documentation
 
-- [`docs/initial-plan.md`](docs/initial-plan.md) - initial product and technical plan
+- [`docs/README.md`](docs/README.md) - documentation index
+- [`docs/product-vision.md`](docs/product-vision.md) - long-term product direction
+- [`docs/mvp.md`](docs/mvp.md) - current MVP scope
+- [`docs/domain-model.md`](docs/domain-model.md) - core business concepts
+- [`docs/roadmap.md`](docs/roadmap.md) - planned development phases
+- [`docs/project-structure.md`](docs/project-structure.md) - repository and code organization
+- [`docs/development-workflow.md`](docs/development-workflow.md) - issue, branch, and commit workflow
+- [`docs/initial-plan.md`](docs/initial-plan.md) - original planning note
 
 Additional docs may be added later:
 
 ```text
-docs/domain-model.md
 docs/api-design.md
 docs/database-design.md
-docs/roadmap.md
+docs/decisions/
 ```
 
 ## Development Workflow
@@ -89,16 +95,16 @@ For each feature:
 Example branches:
 
 ```text
-feature/expense-api
-feature/expense-form
+feature/transaction-api
+feature/category-hierarchy
 feature/monthly-summary
 ```
 
 Example commits:
 
 ```text
-feat: add expense entity
-feat: add expense creation endpoint
+feat: add transaction entity
+feat: add expense transaction endpoint
 fix: correct monthly total calculation
 docs: update MVP scope
 ```
