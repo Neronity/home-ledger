@@ -1,5 +1,9 @@
 # Household Finance Tracker - Initial Plan
 
+> This is the original planning document. Current planning has been split into focused documents for readability. Start with [`docs/README.md`](README.md) for the current documentation map.
+
+---
+
 ## Purpose
 
 Build a household expense tracker for day-to-day home expenses.
