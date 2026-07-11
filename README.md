@@ -51,7 +51,53 @@ Create expense transaction -> persist transaction -> display monthly transaction
 
 ## Local Development
 
-Detailed setup will be added once the backend, frontend, and Docker Compose files exist.
+Detailed backend and frontend setup will be added once those apps are generated.
+
+For now, PostgreSQL can be started locally with Docker Compose.
+
+### PostgreSQL
+
+Start PostgreSQL:
+
+```bash
+docker compose up -d
+```
+
+Check service status:
+
+```bash
+docker compose ps
+```
+
+View PostgreSQL logs:
+
+```bash
+docker compose logs postgres
+```
+
+Stop PostgreSQL:
+
+```bash
+docker compose down
+```
+
+Reset local PostgreSQL data:
+
+```bash
+docker compose down -v
+```
+
+Local connection values:
+
+```text
+Host: localhost
+Port: 5432
+Database: home_ledger
+Username: home_ledger_user
+Password: home_ledger_password
+```
+
+More details: [`docs/local-development.md`](docs/local-development.md)
 
 Expected workflow:
 
@@ -69,6 +115,7 @@ Expected workflow:
 - [`docs/domain-model.md`](docs/domain-model.md) - core business concepts
 - [`docs/roadmap.md`](docs/roadmap.md) - planned development phases
 - [`docs/project-structure.md`](docs/project-structure.md) - repository and code organization
+- [`docs/local-development.md`](docs/local-development.md) - local development commands and services
 - [`docs/development-workflow.md`](docs/development-workflow.md) - issue, branch, and commit workflow
 - [`docs/initial-plan.md`](docs/initial-plan.md) - original planning note
 
