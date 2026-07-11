@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: home-ledger-backend
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/home_ledger}
+    username: ${SPRING_DATASOURCE_USERNAME:home_ledger_user}
+    password: ${SPRING_DATASOURCE_PASSWORD:home_ledger_password}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+server:
+  port: ${SERVER_PORT:8080}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

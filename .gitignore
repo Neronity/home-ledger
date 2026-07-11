@@ -44,3 +44,6 @@ pnpm-debug.log*
 *.pid
 *.seed
 *.pid.lock
+
+# Temporary generated files
+.tmp/
