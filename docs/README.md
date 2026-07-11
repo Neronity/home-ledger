@@ -12,6 +12,7 @@ This folder contains the current planning and technical notes for Home Ledger.
 
 - [Domain Model](domain-model.md) - core business concepts and relationships
 - [Project Structure](project-structure.md) - repository, backend, and frontend organization
+- [Local Development](local-development.md) - local services, commands, and troubleshooting
 - [Development Workflow](development-workflow.md) - GitHub issues, branches, commits, and feature flow
 
 ## Historical Notes
@@ -27,4 +28,5 @@ Keep each document focused:
 - `domain-model.md` answers: what are the core concepts?
 - `roadmap.md` answers: what comes next?
 - `project-structure.md` answers: where does code go?
+- `local-development.md` answers: how do I run local services?
 - `development-workflow.md` answers: how do we work?
